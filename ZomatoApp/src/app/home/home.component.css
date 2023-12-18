@@ -95,31 +95,15 @@ a{
     cursor:pointer;
   }
 
-
-
-
-
-
-/* 
-  .card{
+  .resto-list{
     display: flex;
-    align-items: center;
-    width: 35vh;
-    height: 10vh;
-    justify-content: space-around;
-    box-sizing: border-box;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-    border-radius: 10PX;
-
-
-
-    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
-
-<div class="card">
-    <h3 class="city-name">Pandharpur  </h3>
-    <p> <i class='bx bx-chevron-right'></i></p>
-    <!-- <p><i class='bx bx-chevron-right'></i></p> -->
-</div>
-
-
-} */
+    column-gap: 30px;
+    row-gap: 30px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    cursor: pointer;
+   
+  }
+  /* .resto-list:hover{
+    transform: translateY(2px);
+  } */
