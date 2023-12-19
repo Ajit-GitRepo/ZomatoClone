@@ -11,8 +11,8 @@
     /* background-color: black; */
     grid-template-rows: auto auto auto;
     
-    /* align-items: center;
-    justify-content: center; */
+    align-items: center;
+    /* justify-content: center; */
     margin: 0;
     padding: 0;
    
@@ -95,15 +95,11 @@ a{
     cursor:pointer;
   }
 
-  .resto-list{
-    display: flex;
-    column-gap: 30px;
-    row-gap: 30px;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    cursor: pointer;
-   
-  }
+ 
   /* .resto-list:hover{
     transform: translateY(2px);
   } */
+
+  .resto-list{
+    padding-left: 50px;
+  }

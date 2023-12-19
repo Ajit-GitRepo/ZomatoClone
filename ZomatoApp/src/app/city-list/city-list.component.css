@@ -1,0 +1,10 @@
+.list-container{
+    display: flex;
+    column-gap: 30px;
+    row-gap: 30px;
+    justify-content: stretch;
+    align-items: center;
+    flex-wrap: wrap;
+    cursor: pointer;
+   
+  }
