@@ -1,0 +1,59 @@
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+<div class="form-container" [ngClass]="">
+    <form #frm="ngForm" (ngSubmit)="onSubmit(frm)">
+        <div class="login-container">
+            <h2>LogIn</h2>
+    
+            <div class="login-details">
+                <div class="phone-number-input">
+                    <span class="country-code"> <input type="number" ngModel name="countryCode" placeholder="Counrty code" required></span>
+                    <span class="number-input" ><input  type="number" ngModel name="contactNumber" placeholder="Mobile Number" required ></span>
+                </div>
+                <div class="OTP-button">
+                    <button (click)="OTPGeneration()" [disabled]="!frm.valid">Send OTP</button>
+                    
+            <!-- validation screen wil pop up on sent OTP and data will be at stage state-->
+               </div>
+            </div>
+    
+            <hr>
+    
+            <div class="federation-service">
+                <div class="gmail"><button>continue with Email</button></div>
+                <div class="google"><button>log in with google</button></div>
+            </div>
+    
+            <p>New to Zomato? <a routerLink="/singup">Create account</a></p>
+        </div>
+    
+    </form>
+</div>
+
+<!-- 
+<h2>LogIn</h2>
+    <form >
+        
+    </form>
+
+
+    <div class="form-input">
+        <label for="username"> <i class='bx bx-user'></i> </label>
+    <input type="text" placeholder="Username" ngModel name="username">
+    </div>
+    <div class="form-input">
+        <label for="email"><i class='bx bx-envelope'></i></label>
+        <input type="email" ngModel name="email" placeholder=" Email"></div>
+
+    <div class="btn">
+        <input type="submit">
+    </div> -->
+
+
+
+    <!-- <div class="otp-sent" *ngIf="clicked">
+                        <div class="submit-data">
+                            <div class="OTP"><input type="number" placeholder="Enter OTP" ngModel name="OTP"></div>
+                            <div class="submit-form"><input type="submit" placeholder="Verify OTP"></div>
+                        </div>
+                    </div> -->
